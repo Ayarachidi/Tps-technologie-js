@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Suivi de Lecture</title>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-lg mx-auto bg-white p-6 rounded shadow-md">
+    <h1 class="text-2xl font-bold mb-4">Ajouter un Livre</h1>
+    <form id="bookForm">
+        <input type="text" id="title" placeholder="Title" class="w-full p-2 border border-gray-300 rounded mb-4">
+        <input type="text" id="author" placeholder="Author" class="w-full p-2 border border-gray-300 rounded mb-4">
+        <input type="number" id="pages" placeholder="Number of Pages" class="w-full p-2 border border-gray-300 rounded mb-4">
+        <select id="status" class="w-full p-2 border border-gray-300 rounded mb-4">
+            <option value="READ">Read</option>
+            <option value="RE_READ">Re-read</option>
+            <option value="DNF">DNF</option>
+            <option value="CURRENTLY_READING">Currently reading</option>
+            <option value="RETURNED_UNREAD">Returned Unread</option>
+            <option value="WANT_TO_READ">Want to read</option>
+        </select>
+        <input type="number" id="price" placeholder="Price" class="w-full p-2 border border-gray-300 rounded mb-4">
+        <input type="number" id="pagesRead" placeholder="Pages Read" class="w-full p-2 border border-gray-300 rounded mb-4">
+        <select id="format" class="w-full p-2 border border-gray-300 rounded mb-4">
+            <option value="PRINT">Print</option>
+            <option value="PDF">PDF</option>
+            <option value="EBOOK">Ebook</option>
+            <option value="AUDIOBOOK">AudioBook</option>
+        </select>
+        <input type="text" id="suggestedBy" placeholder="Suggested By" class="w-full p-2 border border-gray-300 rounded mb-4">
+        <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Add Book</button>
+    </form>
+  </div>
+</body>
+</html>
